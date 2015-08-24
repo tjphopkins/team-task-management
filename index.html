@@ -1,0 +1,10 @@
+{% block js_head %}
+    {{ super() }}
+    <script type="text/javascript" src="./js/app.js"></script>
+    <script type="text/javascript">
+    document.addEventListener('DOMContentLoaded', function () {
+        var instance = new TodoApp(
+            document.body, {});
+    });
+    </script>
+{% endblock %}
